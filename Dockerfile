@@ -6,6 +6,7 @@ RUN pip install -r requirements.txt
 
 COPY src .
 
+RUN mkdir data
 ENV DOMAIN=foo.com
 RUN python main.py
 
